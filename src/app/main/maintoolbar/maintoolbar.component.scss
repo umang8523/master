@@ -1,3 +1,29 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+  .mat-maintoolbar-container {
+    // background-color: rgb(204, 44, 71);
+    background-image: linear-gradient(to right, #D93CAD , #7E3FE7);
+    .mat-notes {
+      color: white;
+    }
+  }
+
+  .mat-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    mat-icon {
+      color: white;
+      background: transparent;
+    } 
+    mat-icon:focus{
+      outline: none;
+    }
+  }
+  .mat-menu:focus{
+    outline: none;
+  }
+
+  

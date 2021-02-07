@@ -1,0 +1,16 @@
+.mat-card-container {
+    padding: 0.5rem;
+    padding-bottom: 0;
+    cursor: pointer;
+    .mat-card-text {
+        font-weight: bold;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .mat-card-date {
+        text-align: right;
+        color: grey;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}

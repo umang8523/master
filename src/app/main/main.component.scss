@@ -1,0 +1,99 @@
+// .example-container {
+//     width: 400px;
+//     height: 200px;
+//     margin: 12px;
+//     border: 1px solid #555;
+//   }
+  
+//   mat-drawer-content {
+//     padding: 12px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    // margin-left: 0.5rem;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    flex-direction: row;
+}
+
+.mat-cards {
+    width: calc(100% / 6);
+    display: inline-block;
+    align-items: stretch;
+    margin: 0.5rem;
+    height: fit-content;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%);
+}
+.mtab-main-container {
+
+}
+
+.mat-select:focus {
+  
+}
+.mat-drawer {
+  width: 10%;
+}
+.height100 {
+    height: 100%;
+}
+.mat-color-container {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    .mat-color-selector {
+      text-align: center;
+      vertical-align: middle;
+      line-height: 3rem;
+      padding-left: 2rem;
+      font-size: 1.2rem;
+    }
+    .mat-filter {
+      display: flex;
+      background-image: linear-gradient(to right, #D93CAD , #7E3FE7);
+      .mat-filter-text {
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 3rem;
+        padding-left: 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+    .mat-select {
+      display: flex;
+      height: 3rem;
+      .mtab-check-icon {
+        padding-right: 0.5rem;
+      }
+    }
+    .color-white {
+        background-color: #ffffff;
+    }
+    .color-yello {
+      background-color: #ffff00;
+    }
+    .color-red {
+      background-color: #ff3333;
+    }
+    .color-light-green {
+      background-color: #99ff66;
+    }
+    .color-light-purple {
+      background-color: #cc66ff;
+    }
+    .color-blue {
+      background-color: #00ccff;
+    }
+    .color-pinch {
+      background-color: #33ffbb;
+    }
+  }

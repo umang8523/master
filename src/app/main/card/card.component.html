@@ -1,0 +1,8 @@
+<div (click)="onCardClick()" [ngStyle]="{'background-color': card.color}" class="mat-card-container">
+    <p class="mat-card-text">
+        {{card.noteText}}
+    </p>
+    <div class="mat-card-date">
+        {{ card.dateTime | date:'mediumDate' }}
+    </div>
+</div>

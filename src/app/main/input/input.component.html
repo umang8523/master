@@ -1,10 +1,23 @@
-<div>
-    <div>
-<form class="example-form" [formGroup]="baseForm">
-    <mat-form-field class="example-full-width">
-      <input type="text" matInput formControlName="note" 
-             placeholder="Ex. pat@example.com">
-    </mat-form-field>
-  </form>
+<div class="mat-delete" *ngIf="data" (click)="deleteClickHandler($event)">
+  <span class="material-icons mat-delete-icon">
+    delete
+</span>
 </div>
+<div [ngClass]="{'mat-input-container-box': !data}" class="mat-input-main-container width100">
+ 
+  <div class="mat-form-container width100">
+    <form class="example-form" [formGroup]="baseForm">
+        <!-- <input #input type="text" (focus)="onInputFocus($event)" formControlName="note" placeholder="Add Note Here"> -->
+        <textarea #input (focus)="onInputFocus($event)" formControlName="note" placeholder="Take a note"></textarea>
+    </form>
+  </div>
+  
+  <div *ngIf="showColor" class="color-container">
+    <div class="color-blue" (click)="onColorClick($event, '#00ccff')"></div>
+    <div class="color-light-purple" (click)="onColorClick($event, '#cc66ff')"></div>
+    <div class="color-red" (click)="onColorClick($event, '#ff3333')"></div>
+    <div class="color-light-green" (click)="onColorClick($event, '#99ff66')"></div>
+    <div class="color-yello" (click)="onColorClick($event, '#ffff00')"></div>
+    <div class="color-pinch" (click)="onColorClick($event, '#33ffbb')"></div>
+  </div>
 </div>

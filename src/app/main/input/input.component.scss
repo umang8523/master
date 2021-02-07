@@ -1,9 +1,84 @@
-.example-form {
+.mat-input-main-container {
+  &.mat-input-container-box {
+    padding: 1rem;
+    margin: 0.75rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+  background-color: white;
+  .example-form {
     min-width: 150px;
-    max-width: 500px;
     width: 100%;
   }
   
   .example-full-width {
     width: 100%;
   }
+
+  .width100 {
+    width: 100%;
+  }
+
+  textarea{
+    width: 100%;
+    padding: 0;
+    border-width: 0;
+    overflow: hidden;
+  }
+  
+  textarea:focus {
+    border: 0;
+    border-color: white;
+    outline: none;
+  }
+
+  
+
+  .mat-form-container {
+    // padding: 0.5rem 1rem 0 1rem;
+    display: inline-block;
+  }
+
+  .width75 {
+    width: 75%;
+  }
+
+
+  .color-container {
+    display: flex;
+    height: 1.5rem;
+    cursor: pointer;
+    .color-yello {
+      background-color: #ffff00;
+      width: calc(100% / 6);
+    }
+    .color-red {
+      background-color: #ff3333;
+      width: calc(100% / 6);
+    }
+    .color-light-green {
+      background-color: #99ff66;
+      width: calc(100% / 6);
+    }
+    .color-light-purple {
+      background-color: #cc66ff;
+      width: calc(100% / 6);
+    }
+    .color-blue {
+      background-color: #00ccff;
+      width: calc(100% / 6);
+    }
+    .color-pinch {
+      background-color: #33ffbb;
+      width: calc(100% / 6);
+    }
+  }
+}
+.mat-delete {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  .mat-delete-icon {
+    color: red;
+  }
+}

@@ -1,4 +1,57 @@
-<app-maintoolbar></app-maintoolbar>
-<app-input></app-input>
-<!-- <div>main works? -->
-<!-- </div> -->
+<div class="height100">
+<mat-drawer-container #drawerContainer class="example-container height100">
+    <mat-drawer #drawer [mode]="side" class="mat-drawer">
+        <div class="mat-color-container">
+            <div class="mat-filter">
+                <div class="mat-filter-text">
+                    Filter
+                </div></div>
+            <div class="color-white mat-select" (click)="onColorClick($event, 'All')">
+                <div class="mat-color-selector">
+                <span class="material-icons mtab-check-icon">
+                    done
+                </span>Select all</div></div>
+            <div class="color-blue mat-select" (click)="onColorClick($event, '#00ccff')">
+                <div class="mat-color-selector">
+                    <span class="material-icons mtab-check-icon">
+                        done
+                    </span>Select</div></div>
+            <div class="color-light-purple mat-select" (click)="onColorClick($event, '#cc66ff')">
+                <div class="mat-color-selector">
+                    <span class="material-icons mtab-check-icon">
+                        done
+                    </span>Select</div></div>
+            <div class="color-red mat-select" (click)="onColorClick($event, '#ff3333')">
+                <div class="mat-color-selector">
+                    <span class="material-icons mtab-check-icon">
+                        done
+                    </span>Select</div></div>
+            <div class="color-light-green mat-select" (click)="onColorClick($event, '#99ff66')">
+                <div class="mat-color-selector">
+                    <span class="material-icons mtab-check-icon">
+                        done
+                    </span>Select</div></div>
+            <div class="color-yello mat-select" (click)="onColorClick($event, '#ffff00')">
+                <div class="mat-color-selector">
+                    <span class="material-icons mtab-check-icon">
+                        done
+                    </span>Select</div></div>
+            <div class="color-pinch mat-select" (click)="onColorClick($event, '#33ffbb')">
+                <div class="mat-color-selector">
+                    <span class="material-icons mtab-check-icon">
+                        done
+                    </span>Select</div></div>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-maintoolbar (eMenuClick)="toggleSidebar()"></app-maintoolbar>
+        <app-input></app-input>
+        <div class="cards-container">
+            <div *ngFor="let card of cardsData" class="mat-cards">
+                <app-card [card]="card"></app-card>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>
+    
+</div>
